@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+# TASKIFY APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1/ INTRODUCTION
+Welcome to my first React project: **Taskify App**. I learned how to create it based on a [tutorial](https://www.youtube.com/watch?v=FJDVKeh7RJI) from freeCodeCamp.org on YouTube.
 
-## Available Scripts
+<p align="center">
+<img src ="../public/Taskify.png"/>
+</p>
 
-In the project directory, you can run:
+This app allows you to create and manage your to-do list. You can edit, remove, or mark a task as done. Additionally, you can drag and drop tasks to rearrange your to-do list.
 
-### `npm start`
+## 2/ HOW IT WORKS
+### a. Creating a new task:
+To create a new task, you must **click on** the *input box* and enter your task. Then click the *“Go” button* or press the *"Enter" key* on your keyboard. Your new task will appear on **"Active Tasks"** item.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I used the *useState()* Hook to set up the create task feature. You can watch it in **"InputField.tsx"** component.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### b. Managing your tasks
+- **Editing**: If you want to edit one of your tasks, click on the **“Edit” button** next to that task. The input box will appear, and after editing your task, *press Enter key* to submit.
+- **Removing**: If you want to remove one of your tasks, click on the **“Remove” button** next to that task. The task will be removed from the list.
+- **Marking as done**: If you want to mark one of your tasks as done, click on the **“Tick” button** next to that task. The task will be crossed out.
 
-### `npm test`
+I used the *useState()* Hook to set up all these operations. You can watch it in **"SingleTodo.tsx"** component.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### c. Dragging and dropping
+You can rearrange your to-do list by dragging and dropping tasks. Simply select a task, drag it to the position you want on **"Active Tacks"** or **"Completed Tasks"** item, and drop it. Your todo list will be arranged logically according to your wishes.
 
-### `npm run build`
+I used the [react-beautiful-dnd](https://www.npmjs.com/package/react-beautiful-dnd?activeTab=dependencies) to set up the to-do list and drag/drop feature. You can watch it in **"TodoList.tsx"** component.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+***
+*These are all the features of my app. I hope it helps you manage your to-do list more easily!*
