@@ -4,7 +4,7 @@
 Welcome to my first React project: **Taskify App**. I learned how to create it based on a [tutorial](https://www.youtube.com/watch?v=FJDVKeh7RJI) from freeCodeCamp.org on YouTube.
 
 <p align="center">
-<img src ="../public/Taskify.png"/>
+<img src ="https://github.com/Thuww/React-TypeScript-Taskify/assets/104199504/2224aa93-5e69-498d-aeb8-a7d1e3448bde"/>
 </p>
 
 This app allows you to create and manage your to-do list. You can edit, remove, or mark a task as done. Additionally, you can drag and drop tasks to rearrange your to-do list.
