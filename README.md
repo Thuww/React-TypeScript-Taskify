@@ -1,8 +1,7 @@
 # TASKIFY APP
 
 ## 1/ INTRODUCTION
-Welcome to my first React project: **Taskify App**. I learned how to create it based on a [tutorial](https://www.youtube.com/watch?v=FJDVKeh7RJI) from freeCodeCamp.org on YouTube. access this web by https://thuww.github.io/React-TypeScript-Taskify/
-
+Welcome to my first React project: **Taskify App**. I learned how to create it based on a [tutorial](https://www.youtube.com/watch?v=FJDVKeh7RJI) from freeCodeCamp.org on YouTube.
 
 <p align="center">
 <img src ="https://github.com/Thuww/React-TypeScript-Taskify/assets/104199504/2224aa93-5e69-498d-aeb8-a7d1e3448bde"/>
