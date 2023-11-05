@@ -55,7 +55,7 @@ const SingleTodo = ({ index, todo, todos, setTodos }:  Props) => {
     <Draggable draggableId={todo.id.toString()} index={index}> 
       {(provided, snapshot) => (
         <form 
-          className={`todos__single ${snapshot.isDragging ? "drag" : ""}`} 
+        className={`todos-single ${snapshot.isDragging ? "shadow-[0_0_20px_black]" : ""}`}
           onSubmit={(e) => handleEdit(e, todo.id)}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
@@ -67,15 +67,15 @@ const SingleTodo = ({ index, todo, todos, setTodos }:  Props) => {
               ref={inputRef}
               value={editTodo} 
               onChange={(e) => setEditTodo(e.target.value)} 
-              className="todos__single--text"
+              className="todo-single-text"
             />
           )  : todo.isDone ? (
-            <s className="todos__single--text">{todo.todo}</s> 
+            <s className="todo-single-text">{todo.todo}</s> 
           ) : (
-            <span className="todos__single--text">{todo.todo}</span>
+            <span className="todo-single-text">{todo.todo}</span>
           )}
 
-          <div> 
+          <div className="flex"> 
           <span 
             className="icon" 
             onClick={() => {

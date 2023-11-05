@@ -58,8 +58,8 @@ const App: React.FC = () => {
   return (
     //Drag and Drog
     <DragDropContext onDragEnd={onDragEnd}>
-      <div className="App">
-        <span className="heading">Taskify</span>
+      <div className="w-screen h-screen flex flex-col items-center bg-[#2f74c0] font-['Neucha']">
+      <span className="heading uppercase text-[40px] my-[30px] mx-[0px] text-white z-[1] text-center">Taskify</span>
         <InputFeild todo={todo} setTodo={setTodo} handleAdd={handleAdd} /> 
         <TodoList 
           todos={todos} 

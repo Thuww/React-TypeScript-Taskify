@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&family=Neucha&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  line-height: normal;
+}
+
+input {
+  font-family:sans-serif;
+}
+
+button {
+  font-family:sans-serif;
+}
+
+*, ::before, ::after {
+  box-sizing: initial;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +35,59 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media (max-width: 800px) {
+  .heading {
+    margin: 15px 0;
+    font-size: 35px;
+  }
+}
+
+.todos {
+  @apply flex w-[47.5%] flex-col p-[15px] rounded-[5px] bg-[rgb(50_195_205)];
+}
+
+.todos-single {
+  @apply flex rounded-[5px] p-[20px] mt-[15px] bg-todo transition-[0.2s] hover:shadow-[0_0_5px_black] hover:scale-[1.03];
+}
+
+.todo-single-text {
+  @apply flex-[1] p-[5px] border-none text-[20px] outline-none ;
+}
+
+.icon {
+  @apply ml-[10px] text-[25px] cursor-pointer;
+}
+
+@media (max-width: 1100px) { 
+  .todos {
+      width: 45%;
+  }
+}
+
+@media (max-width: 700px) { 
+  .input {
+      width: 95%;
+  }
+  .todos {
+      width: 95%;
+      margin-bottom: 10px; 
+  }
+  .container {
+      width: 95%;
+      flex-direction: column;
+  }
+}
+
+.remove {
+  @apply bg-[rgb(235_103_80)];
+}
+
+.dragactive {
+  @apply bg-[rgb(0_221_236)];
+}
+
+.dragcomplete {
+  @apply bg-[rgb(255_38_0)]; 
 }

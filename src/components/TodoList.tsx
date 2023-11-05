@@ -19,15 +19,15 @@ const TodoList: React.FC<Props> = ({
 }) => {
   return (
     //Setting drop place of todolist
-    <div className="container">
+    <div className="container flex w-[95%] mt-[10px] justify-between items-start">
       <Droppable droppableId="TodosList"> 
         {(provided, snapshot) => (
           <div 
-            className={`todos ${snapshot.isDraggingOver? "dragactive" : ""}`} 
+          className={`todos ${snapshot.isDraggingOver? "dragactive" : ""}`}   
             ref={provided.innerRef}
             {...provided.droppableProps}
           >
-            <span className="todos__heading">Active Tasks</span>
+            <span className="text-[30px] text-white">Active Tasks</span>
             {todos?.map((todo, index) => (
               <SingleTodo
                 index={index}
@@ -45,11 +45,11 @@ const TodoList: React.FC<Props> = ({
       <Droppable droppableId="TodosRemove">
         {(provided, snapshot) => (
           <div 
-            className={`todos remove ${ snapshot.isDraggingOver ? "dragcomplete" : ""}`}
+          className={`todos remove ${snapshot.isDraggingOver ? "dragcomplete" : ""}`}
             ref={provided.innerRef}
             {...provided.droppableProps}
           >
-          <span className="todos__heading">Completed Tasks</span>
+          <span className="text-[30px] text-white">Completed Tasks</span>
           {completedTodos?.map((todo, index) => (
             <SingleTodo
               index={index}
